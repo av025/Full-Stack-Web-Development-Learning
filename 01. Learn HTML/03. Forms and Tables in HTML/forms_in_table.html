@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+  </head>
+  <body>
+    <h1>Forms in HTML</h1>
+    <!--* In HTML they gave feature to take inputs from user and manipulate the data or send as request to backend. -->
+    <!--? To create form in HTML we used form tag  -->
+    <h3>Form One</h3>
+    <form>
+      <!--* Label tag was used to give Title for our input tag -->
+      <label for="first-name">First Name :</label>
+      <input type="text" name="user-first-name" id="first-name" />
+      <br />
+      <label for="last-name">Last Name :</label>
+      <input type="text" name="user-last-name" id="last-name" />
+      <br />
+      <!-- These above two input types are text which are used to take text input from user -->
+      <label for="user-email">Email :</label>
+      <input type="email" name="user-email" id="user-email" />
+      <!-- These above input tag type was email to  takes email as input -->
+      <br />
+      <label for="password">Password :</label>
+      <input type="password" name="user-password" id="password" />
+      <!-- These above input tag type was password to takes password as password -->
+      <br />
+      <button type="reset">Reset</button>
+      <!--* This  was button tag which was used as button in HTML Document -->
+    </form>
+    <h3>Form Two</h3>
+    <div>
+      <form>
+        <label for="name"
+          >Student Name : <input type="text" name="student-name" id="name" />
+        </label>
+        <br />
+        <label for="email"
+          >Student Email :
+          <input type="email" name="student-email" id="email" />
+        </label>
+        <br />
+        <label for="student-feedback">
+          <textarea
+            name="student-feedback"
+            id="student-feedback"
+            rows="10"
+            cols="100"
+          ></textarea>
+        </label>
+        <br />
+        <label for="dob">Date Of Birth</label>
+        <input type="date" name="user-dob" id="dob" />
+        <br />
+        <label> Gender : </label>
+        <label for="male">
+          <input type="radio" name="gender" id="male" value="male" />
+          Male
+        </label>
+
+        <label for="female">
+          <input type="radio" name="gender" id="female" value="female" />
+          Female
+        </label>
+
+        <label for="other">
+          <input type="radio" name="gender" id="other" value="other" />
+          Other
+        </label>
+        <br />
+        <label id="subject-preference">Select Preference</label>
+        <select name="subject" id="subject-preference">
+          <option value="pcm">PCM</option>
+          <option value="pcb">PCB</option>
+          <option value="commerce">Commerce</option>
+        </select>
+
+        <br />
+        <label for="form-acknowledgment"
+          >Please select this Acknowlegment to submit form
+          <input
+            type="checkbox"
+            name="student-acknowledgment"
+            id="form-acknowledgment"
+          />
+        </label>
+        <br />
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
