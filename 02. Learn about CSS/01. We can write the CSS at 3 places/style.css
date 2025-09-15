@@ -1,0 +1,21 @@
+/*! Third way to attach css in our html document was external CSS */
+/* In External CSS we create separate file of css with .css extension because of code of sepearation concern to kept all style code in sepearate file  */ 
+/** Now we have to add this file with the help of link tag in head of our html element  */ 
+p{
+    font-size: 1.5rem;
+} 
+
+h3 {
+    font-size: 2rem;
+} 
+
+.para {
+    background-color: crimson;
+    padding: 10px;
+    color: gold;
+} 
+
+#paraId {
+    background-color: bisque;
+    padding: 10px;
+}
