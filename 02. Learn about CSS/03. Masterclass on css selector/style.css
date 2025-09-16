@@ -1,0 +1,46 @@
+/*! Let explore and understand every type of selectors in CSS to select and style our html element */
+
+/** 1. Universal Selector */
+/* We used universal selector to select all the html elements default and style it when we needs comman styling */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** 2. Type Selector or Element Selector */
+/* This element selector or type selector are used to direct select the html element by there type for example if we want to style h1 than we select it and apply styling. */
+p {
+    font-size: 20px;
+    margin: 20px;
+    padding: 5px;
+} 
+
+/** 3. Class Selector */
+/* Class Selector was used to select the element with class attribute and style the group of elements together and do common styling on it
+* For class selector we are using the dot operator .<class_name>
+ */ 
+
+.highlight {
+    background-color: #21a2c9;
+} 
+
+/** 4. Id Selector */
+/* Id selector was also used to select the element with id attribute and as we know that id attribute was unique so we can give to only one and style out that also commonly */ 
+#header {
+    background-color: #111;
+    color: aliceblue;
+    padding: 10px;
+    font-size: 1.5rem;
+} 
+
+/** 5. Attribute Selector */
+/* We are using attribute selector to select attributes of our html element and apply styling according to that. 
+* We are using the square brackets to select the attribute 
+ */
+
+input[type="text"] {
+    border: 5px solid salmon;
+    padding: 5px;
+    margin: 20px;
+}
