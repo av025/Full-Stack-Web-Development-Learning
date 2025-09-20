@@ -2,37 +2,37 @@
 
 /** 1. Universal Selector */
 /* We used universal selector to select all the html elements default and style it when we needs comman styling */
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /** 2. Type Selector or Element Selector */
 /* This element selector or type selector are used to direct select the html element by there type for example if we want to style h1 than we select it and apply styling. */
 p {
-    font-size: 20px;
-    margin: 20px;
-    padding: 5px;
-} 
+  font-size: 20px;
+  margin: 20px;
+  padding: 5px;
+}
 
 /** 3. Class Selector */
 /* Class Selector was used to select the element with class attribute and style the group of elements together and do common styling on it
 * For class selector we are using the dot operator .<class_name>
- */ 
+ */
 
 .highlight {
-    background-color: #21a2c9;
-} 
+  background-color: #21a2c9;
+}
 
 /** 4. Id Selector */
-/* Id selector was also used to select the element with id attribute and as we know that id attribute was unique so we can give to only one and style out that also commonly */ 
+/* Id selector was also used to select the element with id attribute and as we know that id attribute was unique so we can give to only one and style out that also commonly */
 #header {
-    background-color: #111;
-    color: aliceblue;
-    padding: 10px;
-    font-size: 1.5rem;
-} 
+  background-color: #111;
+  color: aliceblue;
+  padding: 10px;
+  font-size: 1.5rem;
+}
 
 /** 5. Attribute Selector */
 /* We are using attribute selector to select attributes of our html element and apply styling according to that. 
@@ -40,7 +40,89 @@ p {
  */
 
 input[type="text"] {
-    border: 5px solid salmon;
-    padding: 5px;
-    margin: 20px;
+  border: 5px solid salmon;
+  padding: 5px;
+  margin: 20px;
 }
+
+/** 6. Descendant Selector */
+/* Descendant selector are that selector which help to select the parent element all same type of descendants in it and style that. 
+* We use space to select descendant of any parent element like this <parent_element> <child element> 
+ */
+
+article p {
+  font-style: italic;
+  background-color: thistle;
+  color: blue;
+}
+
+/** 7. Child Selector */
+/* In Child Selector we also select the children element only but the difference here here we specificly select child element not descendant and style that.  
+ * For descendant we use greater than symbol ">"  like this <parent_element> > <child_element> 
+  */
+
+.child-selector-example > p {
+  background-color: #21a2c9;
+  color: aliceblue;
+}
+
+/** 8. Adjacent Sibling Selector */
+/* In this Adjacent sibling selector we can just select the sibling element of the next in adjacent position. 
+*  For general sibling selector we used + symbol like <element> + <adjacent sibling>
+*/
+
+h1 + p {
+  background-color: turquoise;
+  padding: 5px;
+  color: rgb(58, 59, 60);
+}
+
+/** 9. General Sibling Selector */
+/* This general sibling selector was also used to select sibling element like adjacent but in general sibling we can select all the element just after that sibling element we are selecting  
+* For General sibling selector we used ~ tilde symbol like this <sibling element> ~ <general_sibling>  
+ */
+
+h2 ~ p {
+  color: #fff;
+  background-color: tomato;
+}
+/*? Here after all the p element after h2 get styled */
+
+/** 10. Pseudo Class Selector */
+/* There was some state also which present with HTML element and we want to represent those behaviour or state of an element than we are using pseudo class selector    
+* Here we use single colon ":" to represent the pseudo class selector 
+*/
+/* It was used to do hover to our element than it shows this text-color and are we are accessing the hover pseudo class of an element.  */
+
+a {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+a:hover {
+  padding: 10px;
+  color: #ff0000;
+  text-decoration: none;
+  background-color: #1234;
+}
+
+/** 11. Pseudo Element Selector */
+/* Pseudo Element Selector was used to select element for styling specific parts of it. 
+* We used double colon "::" to used pseudo element selector 
+*/ 
+p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/** 12. Grouping Selector */
+/* With the help of grouping selector we can select multiple html element and separated by commas 
+* We used commas "," to seperate our element 
+ */
+
+ h1, h2,h3 {
+    font-size: x-large;
+    background-color:#21a2c9;
+    padding: 20px;
+    color: #fff;
+ }
