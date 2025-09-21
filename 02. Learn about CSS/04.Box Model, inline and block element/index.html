@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model, Inline and Block Element</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Box Model, Inline and Block Element</h1>
+    <h2>Intro to Box Model</h2>
+    <p class="info">
+      The CSS Box Model is a fundamental concept that describes how every HTML
+      element is treated as a rectangular box on the webpage. It consists of
+      four layers—content, padding, border, and margin—which together define the
+      total space an element takes up and how it interacts with other elements
+      in the layout.
+    </p>
+    <h3>Content Box (default)</h3>
+    <div class="box-model-demo content-box">
+      This is a content-box element.
+      <br />
+      Width: 300px + 40px (padding) + 20px (border) = 360px
+      <br />
+      Height: 200px + 40px (padding) + 20px (border) = 260px
+    </div>
+    <h3>Border Box</h3>
+    <div class="box-model-demo border-box">
+      This is a border-box element.
+      <br />
+      Width: 220px + 40px (padding) + 20px (border) = 300px
+      <br />
+      Height: 120px + 80px (padding) + 20px (border) = 200px
+    </div>
+    <p class="info">
+      As we see above difference that when we are giving property
+      <code>box-sizing : content-box;</code> than our element have some add on
+      size by padding border and if we use property
+      <code>box-sizing : border-box;</code> than all our padding, border and
+      width or height equal total height and width we are provide to it not
+      adding extra width or height.
+    </p>
+    <h2>Different type of Element</h2>
+    <p class="info">
+      In HTML mainly there was 3 type of elements and they play important role
+      to style and place in our webpage layout.
+    </p>
+    <ul>
+      <li>
+        <h4>Block Level Element</h4>
+        <p>
+          Block level element by default acquire whole width of our webpage and
+          place next element from new line.
+        </p>
+      </li>
+      <li>
+        <h4>Inline Level Element</h4>
+        <p>
+          Inline Level Element only takes space according to our content and it
+          allow other element to place next or adjacent to each other.
+          <span class="red"
+            >Here we have to note that in inline we can't give padding and
+            height to inline element.
+          </span>
+        </p>
+      </li>
+      <li>
+        <h4>Inline Block Level Element</h4>
+        <p>
+          Now this was special property which was provided by css to place our
+          element according to our layout requirement so we can transform our
+          inline element to have property of block level element also.
+        </p>
+      </li>
+    </ul>
+    <p class="block-level">
+      This was p element example of block level element that takes whole width
+      of our screen or viewport
+      <span class="inline-level"
+        >This was span element which was example of Inline element with only
+        takes content space require.</span
+      >
+    </p>
+    <h2>Components of Box Model</h2>
+    <ul>
+      <li>
+        <mark>Content Box :</mark> The Content Box where we write our content
+        which have width and height.
+      </li>
+      <li>
+        <mark>Padding :</mark>Padding was useful property to create spaces
+        between our element's corner and content box so it have some space and
+        clear proper visual.
+      </li>
+      <li><mark>Border :</mark>Border was property to give border to our element</li>
+      <li><mark>Margin :</mark>Margin was also used to create space but not internally with other elements so our content seen visual clearly.</li>
+    </ul>
+  </body>
+</html>
