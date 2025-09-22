@@ -22,6 +22,7 @@ h2 {
 .navbar-one {
     background-color: #eaeaea;
     padding: 10px;
+    border-radius: 5px;
 
 } 
 
@@ -109,7 +110,7 @@ h2 {
 
 .navbar-two a:hover {
     color: #fff;
-    background-color: #147e0a8d;
+    background-color: #147e0a94;
     border-radius: 5px;
 } 
 
@@ -123,3 +124,61 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
 } 
+
+.navbar-three {
+    background-color: #07647e;
+    padding: 10px;
+    border-radius: 5px;
+} 
+
+.navbar-three ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-three a {
+    text-decoration: none;
+    color: #ffffffb9;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px;
+}
+
+.navbar-three a:hover {
+    color: #fff;
+}
+
+.navbar-three .dropdown-content  {
+    display: none;
+}
+
+
+
+.navbar-three .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    width: 15%;
+    background-color: #3e3e3e;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.dropdown-content  a:hover {
+    background-color: #ffffff1d;
+    border-radius: 5px;
+} 
+
+.navbar-three .login-btn {
+   background-color: #eaeaea;
+    border: none;
+    font-size: 1rem;
+    font-weight: normal;
+    padding:  5px 15px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
