@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;  
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #1a1a1a;
     color: #ffff;
+
 }
 
 h2 {
@@ -54,8 +58,6 @@ h2 {
     background-color: #0a65c7;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
-
-
 } 
 
 .navbar-one a:hover::after {
@@ -68,7 +70,7 @@ h2 {
     border: none;
     font-size: 1.1rem;
     padding: 5px 15px;
-    border-radius: 5%;
+    border-radius: 5px;
    cursor: pointer;
 } 
 
@@ -76,3 +78,48 @@ h2 {
      background-color: #06196e;
 }
 
+.navbar-two {
+  background-color: #03643c;
+   width : 20%;
+   padding: 20px;
+    border-radius: 10px;
+}
+
+.navbar-two ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar-two li {
+    margin-bottom:1rem ;
+    width: inherit;
+} 
+
+.navbar-two a {
+    display: block;
+    text-decoration: none;
+    color: #ffffffa0;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2rem;
+
+}
+
+.navbar-two a:hover {
+    color: #fff;
+    background-color: #147e0a8d;
+    border-radius: 5px;
+} 
+
+.navbar-two .login-btn { 
+    background-color: #eaeaea;
+    border: none;
+    font-size: 1rem;
+    font-weight: normal;
+    padding:  5px 15px;
+    width: 60%;
+    border-radius: 5px;
+    cursor: pointer;
+} 
