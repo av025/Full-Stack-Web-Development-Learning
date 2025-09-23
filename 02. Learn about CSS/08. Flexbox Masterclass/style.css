@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+.flex-container {
+  background-color: #fff;
+  border: 2px solid #121;
+  height: 300px;
+  width: 500px;
+  padding: 10px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  background-color: #ffb3ba;
+}
+
+.two {
+  background-color: #baffc3;
+}
+
+.three {
+  background-color: #ffffba;
+}
+
+.four {
+  background-color: #ffdbfa;
+}
+
+.five {
+  background-color: #b7e5f7;
+}
+
+.parent-one {
+  /** Using display flex */
+  display: flex;
+  /** Default direction of flex direction was row only.....  */
+  flex-direction: row;
+  /*! default flex-direction */
+}
+
+.parent-two {
+  display: flex;
+  flex-direction: column;
+}
+
+.parent-three {
+  display: flex;
+  justify-content: space-between;
+  /** justify-content was used to place flex-items in a main axis mostly horizontal direction. */
+}
+
+.parent-four {
+  display: flex;
+  align-items: center;
+  /** This align-items was used to place flex-items in cross axis mostly vertical direction.  */
+}
+
+.parent-five {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  /** This flex-wrap property help to wrap our flex-items inside the flex-container otherwise all flex-items align in a single line.  */
+  flex-direction: row;
+  gap: 4rem;
+  /** gap property help to give gap between our flex-items */
+}
+
+.parent-six {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /** This align-content property help to align our whole content in coss-axis or main-axis according to flex-direction  */
+  align-content: space-around;
+}
+
+.parent-seven {
+  display: flex;
+}
+
+.seven-one {
+    order: 5;
+} 
+
+.seven-two {
+    order: 4; 
+}
+
+.seven-three {
+    order: 2;
+}
+
+.seven-four {
+    order: 1;
+}
+
+.seven-five {
+    order: 3;
+} 
+
+.parent-eight {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.eight-one {
+    flex-grow: 3;
+}
+
+.eight-two {
+    flex-grow: 4;
+} 
+
+.eight-three {
+    flex-grow: 3;
+}
+
+.eight-four {
+    flex-grow: 4;
+}
+
+.eight-five {
+    flex-grow: 4;
+} 
+
+.parent-nine {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nine-one {
+    align-self: flex-start;
+}
+
+.nine-two {
+    align-self: center;
+} 
+
+.nine-three {
+    align-self: flex-end;
+}
+
+.nine-four {
+    align-self: flex-start;
+}
+
+.nine-five {
+    align-self: center;
+}
+
+.nine-six {
+    align-self: flex-start;
+}
